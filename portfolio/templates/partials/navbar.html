@@ -1,0 +1,16 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+        <a class="navbar-brand fw-bold fst-italic" href="/">Jeresmc7</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-item nav-link" href="{%url 'blog:posts' %}">Blog</a>
+            <a class="nav-item nav-link d-flex align-items-center btn btn-primary btn-sm" href="{% static 'portfolio/CV Jeremias Santa Maria Ceccoli Dev.pdf' %}" target="_blank">Download CV</a>
+          </div>
+        </div>
+    </div>
+  </nav>
